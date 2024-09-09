@@ -1,5 +1,5 @@
 {
-  "name": "@ionic/vue-router",
+  "name": "mr-vue-router",
   "version": "8.3.0",
   "description": "Vue Router integration for @ionic/vue",
   "scripts": {
