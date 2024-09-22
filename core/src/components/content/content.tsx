@@ -459,6 +459,7 @@ export class Content implements ComponentInterface {
           'content-sizing': hostContext('ion-popover', this.el),
           overscroll: forceOverscroll,
           [`content-${rtl}`]: true,
+          'hide-scrollbar': scrollbar,
         })}
         style={{
           '--offset-top': `${this.cTop}px`,
@@ -475,7 +476,6 @@ export class Content implements ComponentInterface {
             'inner-scroll': true,
             'scroll-x': scrollX,
             'scroll-y': scrollY,
-            'hide-scrollbar': scrollbar,
             overscroll: (scrollX || scrollY) && forceOverscroll,
           }}
           ref={(scrollEl) => (this.scrollEl = scrollEl)}
