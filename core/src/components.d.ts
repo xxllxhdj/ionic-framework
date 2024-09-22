@@ -818,6 +818,10 @@ export namespace Components {
           * If you want to disable the content scrolling in the Y axis, set this property to `false`.
          */
         "scrollY": boolean;
+        /**
+          * Hide scrollbar
+         */
+        "scrollbar": boolean;
     }
     interface IonDatetime {
         /**
@@ -5530,6 +5534,10 @@ declare namespace LocalJSX {
           * If you want to disable the content scrolling in the Y axis, set this property to `false`.
          */
         "scrollY"?: boolean;
+        /**
+          * Hide scrollbar
+         */
+        "scrollbar"?: boolean;
     }
     interface IonDatetime {
         /**

@@ -267,6 +267,7 @@ export const IonContent = /*@__PURE__*/ defineContainer<JSX.IonContent>('ion-con
   'forceOverscroll',
   'scrollX',
   'scrollY',
+  'scrollbar',
   'scrollEvents',
   'ionScrollStart',
   'ionScroll',

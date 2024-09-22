@@ -104,6 +104,11 @@ export class Content implements ComponentInterface {
   @Prop() scrollY = true;
 
   /**
+   * Hide scrollbar
+   */
+  @Prop() scrollbar = true;
+
+  /**
    * Because of performance reasons, ionScroll events are disabled by default, in order to enable them
    * and start listening from (ionScroll), set this property to `true`.
    */
@@ -438,7 +443,7 @@ export class Content implements ComponentInterface {
   }
 
   render() {
-    const { fixedSlotPlacement, inheritedAttributes, isMainContent, scrollX, scrollY, el } = this;
+    const { fixedSlotPlacement, inheritedAttributes, isMainContent, scrollX, scrollY, scrollbar, el } = this;
     const rtl = isRTL(el) ? 'rtl' : 'ltr';
     const mode = getIonMode(this);
     const forceOverscroll = this.shouldForceOverscroll();
@@ -470,6 +475,7 @@ export class Content implements ComponentInterface {
             'inner-scroll': true,
             'scroll-x': scrollX,
             'scroll-y': scrollY,
+            'hide-scrollbar': scrollbar,
             overscroll: (scrollX || scrollY) && forceOverscroll,
           }}
           ref={(scrollEl) => (this.scrollEl = scrollEl)}

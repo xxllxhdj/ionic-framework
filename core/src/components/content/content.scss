@@ -114,6 +114,10 @@
   overscroll-behavior-y: contain;
 }
 
+.hide-scrollbar::webkit-scrollbar {
+  display: none;
+}
+
 .scroll-x {
   overflow-x: var(--overflow);
   overscroll-behavior-x: contain;
